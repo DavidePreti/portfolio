@@ -1,30 +1,25 @@
 /* global $ */
 
-function test() {
+function welcome() {
     setInterval(() => {
         var text = $('#text');
-        var newText = text.text().split("");
-        var popped = newText.pop();
-
-        popped = popped === 'o' ? 'a' : 'o';
-        newText.push(popped);
-        text.text(newText.join(''));
+        text.text() === 'o' ? text.text('a') : text.text('o');
     }, 2000);
-
 }
 
-
-
-
-
 $(function () {
-    test();
+    welcome();
 
     /* =========================================
      * tooltip
      *  =======================================*/
 
-    $('.customer img').tooltip();
+    // $('.contact-list_item a').tooltip({
+    //     show: {
+    //         effect: "slideDown",
+    //         delay: 250
+    //     },
+    // });
 
 
     /* =========================================
@@ -73,7 +68,7 @@ $(function () {
 
         if ($(window).width() > 1250) {
             $('.parallax').css({
-                'background-position': 'left -' + scroll / 8 + 'px'
+                'background-position': 'left -' + scroll / 4 + 'px'
             });
         } else {
             $('.parallax').css({
@@ -102,7 +97,6 @@ $(function () {
                 $(this).hide();
             }
         });
-
     });
 
 
@@ -171,7 +165,7 @@ $(function () {
      *  animations
      *  =======================================*/
 
-    delayTime = 0;
+    var delayTime = 0;
 
     $('[data-animate]').waypoint(function (direction) {
         delayTime += 250;
@@ -212,9 +206,6 @@ $(function () {
 /* =========================================
  * styled Leaflet Map
  *  =======================================*/
-// ------------------------------------------------------ //
-// styled Leaflet  Map
-// ------------------------------------------------------ //
 
 function map() {
 
