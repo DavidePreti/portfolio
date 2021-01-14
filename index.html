@@ -34,9 +34,10 @@
 <body>
   <!-- Reference item-->
   <!-- navbar-->
-  <header class="header">
+  <header id="header" class="header">
     <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container"><a href="#intro" class="navbar-brand scrollTo">Davide Preti</a>
+      <div class="container">
+        <a href="#intro" class="navbar-brand scrollTo">Davide Preti</a>
         <button type="button" data-toggle="collapse" data-target="#navbarcollapse"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
           class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
@@ -45,22 +46,24 @@
             <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Home</a></li>
             <li class="nav-item"><a href="#about" class="nav-link link-scroll">About</a></li>
             <li class="nav-item"><a href="#references" class="nav-link link-scroll">Progetti</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contatti</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+
   <!-- Intro Image-->
-  <section id="intro" style="background: url(img/home.jpg) center center no-repeat; background-size: cover;"
-    class="intro-section pb-2">
+  <section id="intro" class="intro-section pb-2">
+    <!-- <a href='https://www.freepik.com/vectors/technology'>Technology vector created by starline - www.freepik.com</a> -->
     <div class="container text-center">
-      <div data-animate="fadeInDown" class="logo"><img src="img/logo-big.png" alt="logo" width="130"></div>
+      <div data-animate="fadeInDown" class="logo"><img src="img/slash-bg-none.png" alt="logo" width="130"></div>
       <h1 data-animate="fadeInDown" class="text-shadow mb-5">Hello, hola, नमस्ते !</h1>
       <p data-animate="slideInUp" class="h3 text-shadow text-400">I grind HTML and CSS and then weld them with PHP into
         beautiful and efficient websites.</p>
     </div>
   </section>
+
   <!-- About-->
   <section id="about" class="about-section">
     <div class="container">
@@ -137,7 +140,6 @@
           <li><a href="#" data-filter="html/css">HTML/CSS</a></li>
           <li><a href="#" data-filter="javascript">JAVASCRIPT</a></li>
           <li><a href="#" data-filter="php/laravel">PHP/LARAVEL</a></li>
-          <li><a href="#" data-filter="vue.js">VUE.JS</a></li>
         </ul>
         <div id="detail">
           <div class="row">
@@ -155,7 +157,7 @@
         <div id="references-masonry" data-animate="fadeInUp">
           <div class="row">
 
-            <div data-category="html/css" class="reference-item col-lg-3 col-md-6">
+            <div data-category="html/css" class="reference-item col-lg-4 col-md-6">
               <div class="reference"><a href="#"><img src="img/Spotify_Clone.png" alt="spotify_clone_img"
                     class="img-fluid">
                   <div class="overlay">
@@ -177,7 +179,7 @@
               </div>
             </div>
 
-            <div data-category="html/css" class="reference-item col-lg-3 col-md-6">
+            <div data-category="html/css" class="reference-item col-lg-4 col-md-6">
               <div class="reference"><a href="#"><img src="img/Helbiz_Clone.png" alt="helbiz_clone_img"
                     class="img-fluid">
                   <div class="overlay">
@@ -199,7 +201,7 @@
               </div>
             </div>
 
-            <div data-category="javascript" class="reference-item col-lg-3 col-md-6">
+            <div data-category="javascript" class="reference-item col-lg-4 col-md-6">
               <div class="reference"><a href="#"><img src="img/WhatsApp_Clone.png" alt="whatsapp_clone_img"
                     class="img-fluid">
                   <div class="overlay">
@@ -223,7 +225,7 @@
               </div>
             </div>
 
-            <div data-category="javascript" class="reference-item col-lg-3 col-md-6">
+            <div data-category="javascript" class="reference-item col-lg-4 col-md-6">
               <div class="reference"><a href="#"><img src="img/Netflix_Clone.png" alt="netflix_clone_img"
                     class="img-fluid">
                   <div class="overlay">
@@ -251,7 +253,7 @@
               </div>
             </div>
 
-            <div data-category="php/laravel" class="reference-item col-lg-3 col-md-6">
+            <div data-category="php/laravel" class="reference-item col-lg-4 col-md-6">
               <div class="reference"><a href="#"><img src="img/AirBnB_Clone.png" alt="airbnb_clone_img"
                     class="img-fluid">
                   <div class="overlay">
@@ -264,9 +266,12 @@
                 <div data-images="img/AirBnB_Clone.png, img\AirBnB_Clone_Search.png, img\AirBnB_Clone_Houst_House.png"
                   class="sr-only reference-description">
                   <p>Il progetto prevedeva di prendere spunto dal sito di AirBnB per averne una copia funzionante, sia
-                    lato front-end che back-end.<br> Lato front-end è stato usato Sass per la gestione dello stile e
-                    jQuery come libreria Javascript. <br> Per il back-end è stato usato il framework Laravel per tutta
-                    la logica lato server. Lato database è stato utilizzato MySQL. <br> Come servizi terzi è stato
+                    lato front-end che back-end.</p>
+                  <p> Lato front-end è stato usato Sass per la gestione dello stile e
+                    jQuery come libreria Javascript.</p>
+                  <p> Per il back-end è stato usato il framework Laravel per tutta
+                    la logica lato server. Lato database è stato utilizzato MySQL. </p>
+                  <p> Come servizi terzi è stato
                     utilizzato <em>Algolia Places</em> per inserire le mappe con i pin di ciascuna casa e
                     <em>Braintree</em> per simulare la gestione dei pagamenti tramite carta di credito.
                   </p>
@@ -282,25 +287,81 @@
               </div>
             </div>
 
-
+            <div data-category="php/laravel" class="reference-item col-lg-4 col-md-6">
+              <div class="reference"><a href="#"><img src="img/LaMolisana_Clone.png" alt="airbnb_clone_img"
+                    class="img-fluid">
+                  <div class="overlay">
+                    <div class="inner">
+                      <h3 class="h4 reference-title">La Molisana Clone</h3>
+                      <p>Una replica di La Molisana</p>
+                    </div>
+                  </div>
+                </a>
+                <div data-images="img/LaMolisana_Clone.png" class="sr-only reference-description">
+                  <p>Il progetto prevedeva di replicare una parte del sito di La Molisana utilizzando il framework
+                    Laravel, con dati recuperati da un database.
+                  </p>
+                  <p>Linguaggi utilizzati: HTML5 / CSS3 / JAVASCRIPT / PHP.</p>
+                  <p class="buttons text-center">
+                    <a href="https://github.com/DavidePreti/laravel-molisana" target="_blank"
+                      class="btn btn-outline-primary">
+                      <i class="fa fa-github"></i>Progetto su GitHub</a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="col-sm-12">
+        <div class="mb-5 text-center">
+          <h2 data-animate="fadeInUp" class="title">Contatti</h2>
+        </div>
+
+        <ul data-animate="fadeInUp" class="contact-list">
+          <li class="contact-list_item">
+            <a href="https://www.linkedin.com/in/davide-preti/" class="linkedin" target="_blank">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+
+          <li class="contact-list_item">
+            <a href="https://github.com/DavidePreti" class="github" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+
+          <li class="contact-list_item">
+            <a href="mailto:davide.preti86@gmail.com?subject=Richiesta%20di%20contatto" class="email" target="_blank">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Map-->
-  <div id="map"></div>
+  <div class="container">
+    <div class="col-sm-12">
+      <div id="map"></div>
+    </div>
+  </div>
+
+
   <footer class="main-footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 text-center text-lg-left">
-          <p class="social">
-            <a href="#" class="external facebook wow fadeInUp"><i class="fa fa-facebook"></i></a>
-            <a href="#" data-wow-delay="0.2s" class="external instagram wow fadeInUp"><i
-                class="fa fa-instagram"></i></a>
-            <a href="#" data-wow-delay="0.4s" class="external gplus wow fadeInUp"><i class="fa fa-linkedin"></i></a>
-            <a href="#" data-wow-delay="0.6s" class="email wow fadeInUp"><i class="fa fa-envelope"></i></a>
+        <div class="col-md-12 text-center">
+          <p class="back-top">
+            <a href="#header" class="link-scroll"> <i class="fa fa-chevron-up"></i> TORNA SU</a>
           </p>
         </div>
         <!-- /.6-->
