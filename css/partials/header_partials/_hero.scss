@@ -1,0 +1,41 @@
+/*
+*
+* =====================
+* HERO / INTRO
+* =====================
+*
+*/
+#hero {
+  background-image: url("../img/hero.jpg");
+  background-position: center center no-repeat;
+  background-size: cover;
+}
+
+.intro-section {
+  padding-top: 150px;
+  color: #fff;
+}
+
+.intro-section .logo,
+.intro-section p {
+  margin-bottom: 120px;
+}
+
+.logo img {
+  width: 228px;
+  height: auto;
+  background-color: rgba(256, 256, 256, 0.9);
+  border-radius: 50%;
+}
+
+@media (min-width: 992px) {
+  .intro-section {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}

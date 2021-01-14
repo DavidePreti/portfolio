@@ -1,0 +1,54 @@
+/*
+*
+* =====================
+* FOOTER
+* =====================
+*
+*/
+footer.main-footer {
+  padding: 100px 0 30px 0;
+  background: rgb(255, 255, 255);
+}
+
+footer.main-footer p {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.9rem;
+}
+
+footer.main-footer a {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+footer.main-footer a:hover i {
+  animation: bounce 1s cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-10px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-3px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}

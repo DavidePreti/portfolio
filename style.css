@@ -1,11 +1,3 @@
-/* 
-========================================= 
-========================================= 
-
-Bootstrapious Boilerplate Template
-
-========================================= 
-========================================= */
 /*
 *
 * =====================
@@ -14,7 +6,7 @@ Bootstrapious Boilerplate Template
 *
 */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 14px;
 }
 
 ::-webkit-scrollbar-track {
@@ -33,7 +25,6 @@ Bootstrapious Boilerplate Template
 
 .animated {
   visibility: visible;
-  -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
 }
 
@@ -96,13 +87,6 @@ section {
 }
 
 .bg-gradient {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#2b90d9),
-    to(#56a7e1)
-  ) !important;
   background: linear-gradient(to bottom, #2b90d9, #56a7e1) !important;
   color: #fff;
 }
@@ -128,7 +112,6 @@ section {
 
 .parallax {
   background-size: cover !important;
-  -webkit-transition: all 0.1s !important;
   transition: all 0.1s !important;
 }
 
@@ -168,7 +151,6 @@ nav.navbar a.nav-link {
   padding-top: 30px;
   padding-bottom: 30px;
   border-top: 4px solid transparent;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-size: 0.875rem;
 }
@@ -197,11 +179,11 @@ nav.navbar a.nav-link:hover {
 /*
 *
 * =====================
-* INTRO
+* HERO / INTRO
 * =====================
 *
 */
-#intro {
+#hero {
   background-image: url("../img/hero.jpg");
   background-position: center center no-repeat;
   background-size: cover;
@@ -220,29 +202,19 @@ nav.navbar a.nav-link:hover {
 .logo img {
   width: 228px;
   height: auto;
-  background-color: rgba(256, 256, 256, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
 }
 
 @media (min-width: 992px) {
   .intro-section {
     min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
 }
 
-/*
 *
-* =====================
-* ABOUT
-* =====================
-*
-*/
 .about-section .skill-item {
   margin-bottom: 20px;
 }
@@ -281,59 +253,6 @@ nav.navbar a.nav-link:hover {
 /*
 *
 * =====================
-* SERVICES
-* =====================
-*
-*/
-.services-section hr {
-  border-color: #fff;
-}
-
-.services-section .icon {
-  font-size: 3.5rem;
-  text-shadow: 5px 5px 0 #2074b1;
-}
-
-.services-section p.description {
-  font-size: 0.9rem;
-}
-
-/*
-*
-* =====================
-* SHOWCASE
-* =====================
-*
-*/
-.statistics-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  position: relative;
-  z-index: 1;
-}
-
-.statistics-section .icon {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  line-height: 50px;
-  border-radius: 25px;
-  border: solid 1px #fff;
-}
-
-.statistics-section h5 {
-  font-family: "Roboto", sans-serif;
-}
-
-.statistics-section .counter {
-  font-weight: 300;
-  font-size: 2.5rem;
-}
-
-/*
-*
-* =====================
 * REFERENCES
 * =====================
 *
@@ -352,7 +271,6 @@ nav.navbar a.nav-link:hover {
   border-top: solid 1px #2b90d9;
   border-bottom: solid 1px #2b90d9;
   margin: 0 10px 20px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -364,7 +282,6 @@ nav.navbar a.nav-link:hover {
   cursor: pointer;
   color: #2b90d9;
   outline: none;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -409,7 +326,6 @@ nav.navbar a.nav-link:hover {
 }
 
 .reference img {
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -420,22 +336,14 @@ nav.navbar a.nav-link:hover {
   position: absolute;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
   opacity: 0;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  -webkit-transform: translateY(100%);
   transform: translateY(100%);
   padding: 15px;
 }
@@ -450,13 +358,11 @@ nav.navbar a.nav-link:hover {
 }
 
 .reference:hover img {
-  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
 .reference:hover .overlay {
   opacity: 1;
-  -webkit-transform: none;
   transform: none;
 }
 
@@ -478,7 +384,6 @@ nav.navbar a.nav-link:hover {
   margin-bottom: 20px;
   font-size: 3rem;
   opacity: 0.3;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -587,7 +492,7 @@ nav.navbar a.nav-link:hover {
 */
 footer.main-footer {
   padding: 100px 0 30px 0;
-  background: rgb(255, 255, 255);
+  background: white;
 }
 
 footer.main-footer p {
@@ -631,36 +536,6 @@ footer.main-footer a:hover i {
   100% {
     transform: scale(1, 1) translateY(0);
   }
-}
-
-/*
-
-=====================
-STYLE SWITCHER FOR DEMO
-=====================
-
-*/
-#style-switch-button {
-  position: fixed;
-  top: 120px;
-  left: 0px;
-  border-radius: 0;
-  z-index: 2;
-}
-
-#style-switch {
-  width: 300px;
-  padding: 20px;
-  position: fixed;
-  top: 160px;
-  left: 0;
-  background: #fff;
-  border: solid 1px #ced4da;
-  z-index: 2000;
-}
-
-#style-switch h4 {
-  color: #495057;
 }
 
 /* =========================================
@@ -774,8 +649,8 @@ STYLE SWITCHER FOR DEMO
 }
 
 /*
- * 2. BUTTONS
- */
+   * 2. BUTTONS
+   */
 .btn {
   font-weight: 400;
   border: 1px solid transparent;
@@ -785,21 +660,11 @@ STYLE SWITCHER FOR DEMO
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0rem;
-  -webkit-transition: color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .btn:focus,
 .btn.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(43, 144, 217, 0.25);
   box-shadow: 0 0 0 0.2rem rgba(43, 144, 217, 0.25);
 }
 
@@ -847,7 +712,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-primary:focus,
 .btn-primary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(43, 144, 217, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(43, 144, 217, 0.5);
 }
 
@@ -869,7 +733,6 @@ STYLE SWITCHER FOR DEMO
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(43, 144, 217, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(43, 144, 217, 0.5);
 }
 
@@ -887,7 +750,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-secondary:focus,
 .btn-secondary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
@@ -909,7 +771,6 @@ STYLE SWITCHER FOR DEMO
 .btn-secondary:not(:disabled):not(.disabled):active:focus,
 .btn-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-secondary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
@@ -927,7 +788,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-success:focus,
 .btn-success.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
@@ -949,7 +809,6 @@ STYLE SWITCHER FOR DEMO
 .btn-success:not(:disabled):not(.disabled):active:focus,
 .btn-success:not(:disabled):not(.disabled).active:focus,
 .show > .btn-success.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
@@ -967,7 +826,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-info:focus,
 .btn-info.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
@@ -989,7 +847,6 @@ STYLE SWITCHER FOR DEMO
 .btn-info:not(:disabled):not(.disabled):active:focus,
 .btn-info:not(:disabled):not(.disabled).active:focus,
 .show > .btn-info.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
@@ -1007,7 +864,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-warning:focus,
 .btn-warning.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
@@ -1029,7 +885,6 @@ STYLE SWITCHER FOR DEMO
 .btn-warning:not(:disabled):not(.disabled):active:focus,
 .btn-warning:not(:disabled):not(.disabled).active:focus,
 .show > .btn-warning.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
@@ -1047,7 +902,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-danger:focus,
 .btn-danger.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
@@ -1069,7 +923,6 @@ STYLE SWITCHER FOR DEMO
 .btn-danger:not(:disabled):not(.disabled):active:focus,
 .btn-danger:not(:disabled):not(.disabled).active:focus,
 .show > .btn-danger.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
@@ -1087,7 +940,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-light:focus,
 .btn-light.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
@@ -1109,7 +961,6 @@ STYLE SWITCHER FOR DEMO
 .btn-light:not(:disabled):not(.disabled):active:focus,
 .btn-light:not(:disabled):not(.disabled).active:focus,
 .show > .btn-light.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
@@ -1127,7 +978,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-dark:focus,
 .btn-dark.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
@@ -1149,7 +999,6 @@ STYLE SWITCHER FOR DEMO
 .btn-dark:not(:disabled):not(.disabled):active:focus,
 .btn-dark:not(:disabled):not(.disabled).active:focus,
 .show > .btn-dark.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
@@ -1168,7 +1017,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-outline-primary:focus,
 .btn-outline-primary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(43, 144, 217, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(43, 144, 217, 0.5);
 }
 
@@ -1189,7 +1037,6 @@ STYLE SWITCHER FOR DEMO
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(43, 144, 217, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(43, 144, 217, 0.5);
 }
 
@@ -1208,7 +1055,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-outline-secondary:focus,
 .btn-outline-secondary.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
@@ -1229,7 +1075,6 @@ STYLE SWITCHER FOR DEMO
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-secondary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
 
@@ -1248,7 +1093,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-outline-success:focus,
 .btn-outline-success.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
@@ -1269,7 +1113,6 @@ STYLE SWITCHER FOR DEMO
 .btn-outline-success:not(:disabled):not(.disabled):active:focus,
 .btn-outline-success:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-success.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
@@ -1288,7 +1131,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-outline-info:focus,
 .btn-outline-info.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
@@ -1309,7 +1151,6 @@ STYLE SWITCHER FOR DEMO
 .btn-outline-info:not(:disabled):not(.disabled):active:focus,
 .btn-outline-info:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-info.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
@@ -1328,7 +1169,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-outline-warning:focus,
 .btn-outline-warning.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
@@ -1349,7 +1189,6 @@ STYLE SWITCHER FOR DEMO
 .btn-outline-warning:not(:disabled):not(.disabled):active:focus,
 .btn-outline-warning:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-warning.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
@@ -1368,7 +1207,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-outline-danger:focus,
 .btn-outline-danger.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
@@ -1389,7 +1227,6 @@ STYLE SWITCHER FOR DEMO
 .btn-outline-danger:not(:disabled):not(.disabled):active:focus,
 .btn-outline-danger:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-danger.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
@@ -1408,7 +1245,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-outline-light:focus,
 .btn-outline-light.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
@@ -1429,7 +1265,6 @@ STYLE SWITCHER FOR DEMO
 .btn-outline-light:not(:disabled):not(.disabled):active:focus,
 .btn-outline-light:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-light.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
 
@@ -1448,7 +1283,6 @@ STYLE SWITCHER FOR DEMO
 
 .btn-outline-dark:focus,
 .btn-outline-dark.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
@@ -1469,7 +1303,6 @@ STYLE SWITCHER FOR DEMO
 .btn-outline-dark:not(:disabled):not(.disabled):active:focus,
 .btn-outline-dark:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-dark.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
@@ -1492,8 +1325,8 @@ STYLE SWITCHER FOR DEMO
 }
 
 /*
- * 3. TYPE
- */
+   * 3. TYPE
+   */
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -1633,8 +1466,8 @@ a.text-primary:focus {
 }
 
 /*
- * 4. PAGINATION
- */
+   * 4. PAGINATION
+   */
 .page-item:first-child .page-link {
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1706,8 +1539,8 @@ a.text-primary:focus {
 }
 
 /*
-* 5. UTILITIES
-*/
+  * 5. UTILITIES
+  */
 .bg-primary {
   background-color: #2b90d9 !important;
 }
@@ -1997,8 +1830,8 @@ a.text-dark:focus {
 }
 
 /*
-  * 6. FORMS
-  */
+    * 6. FORMS
+    */
 .form-control {
   padding: 0.45rem 0.75rem;
   font-size: 1rem;
@@ -2007,13 +1840,7 @@ a.text-dark:focus {
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 0rem;
-  -webkit-transition: border-color 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
-    -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .form-control::-ms-expand {
@@ -2026,20 +1853,7 @@ a.text-dark:focus {
   background-color: #fff;
   border-color: #97c9ec;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(43, 144, 217, 0.25);
   box-shadow: 0 0 0 0.2rem rgba(43, 144, 217, 0.25);
-}
-
-.form-control::-webkit-input-placeholder {
-  color: #6c757d;
-}
-
-.form-control:-ms-input-placeholder {
-  color: #6c757d;
-}
-
-.form-control::-ms-input-placeholder {
-  color: #6c757d;
 }
 
 .form-control::placeholder {
@@ -2117,7 +1931,6 @@ select.form-control-lg:not([size]):not([multiple]) {
 .was-validated .custom-select:valid:focus,
 .custom-select.is-valid:focus {
   border-color: #28a745;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
@@ -2162,17 +1975,16 @@ select.form-control-lg:not([size]):not([multiple]) {
 }
 
 .was-validated
-  .custom-control-input:valid:checked
-  ~ .custom-control-label::before,
+.custom-control-input:valid:checked
+~ .custom-control-label::before,
 .custom-control-input.is-valid:checked ~ .custom-control-label::before {
   background-color: #34ce57;
 }
 
 .was-validated
-  .custom-control-input:valid:focus
-  ~ .custom-control-label::before,
+.custom-control-input:valid:focus
+~ .custom-control-label::before,
 .custom-control-input.is-valid:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
@@ -2195,7 +2007,6 @@ select.form-control-lg:not([size]):not([multiple]) {
 
 .was-validated .custom-file-input:valid:focus ~ .custom-file-label,
 .custom-file-input.is-valid:focus ~ .custom-file-label {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
@@ -2234,7 +2045,6 @@ select.form-control-lg:not([size]):not([multiple]) {
 .was-validated .custom-select:invalid:focus,
 .custom-select.is-invalid:focus {
   border-color: #dc3545;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
@@ -2279,17 +2089,16 @@ select.form-control-lg:not([size]):not([multiple]) {
 }
 
 .was-validated
-  .custom-control-input:invalid:checked
-  ~ .custom-control-label::before,
+.custom-control-input:invalid:checked
+~ .custom-control-label::before,
 .custom-control-input.is-invalid:checked ~ .custom-control-label::before {
   background-color: #e4606d;
 }
 
 .was-validated
-  .custom-control-input:invalid:focus
-  ~ .custom-control-label::before,
+.custom-control-input:invalid:focus
+~ .custom-control-label::before,
 .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
@@ -2312,21 +2121,20 @@ select.form-control-lg:not([size]):not([multiple]) {
 
 .was-validated .custom-file-input:invalid:focus ~ .custom-file-label,
 .custom-file-input.is-invalid:focus ~ .custom-file-label {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
 /*
-* 7.CODE
-*/
+  * 7.CODE
+  */
 code {
   font-size: 87.5%;
   color: #e83e8c;
 }
 
 /*
-* 8. NAV
-*/
+  * 8. NAV
+  */
 .nav-link {
   padding: 0.5rem 1rem;
 }
@@ -2375,8 +2183,8 @@ code {
 }
 
 /*
-* 9. CARD
-*/
+  * 9. CARD
+  */
 .card {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -2482,3 +2290,4 @@ code {
     margin-left: 15px;
   }
 }
+/*# sourceMappingURL=style.css.map */
