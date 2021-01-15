@@ -184,7 +184,7 @@ nav.navbar a.nav-link:hover {
 *
 */
 #hero {
-  background-image: url("../img/hero.jpg");
+  background-image: url("https://res.cloudinary.com/dofcj4o0y/image/upload/w_1920,c_scale,q_auto,f_auto/v1610734577/hero_m6nkni.jpg");
   background-position: center center no-repeat;
   background-size: cover;
 }

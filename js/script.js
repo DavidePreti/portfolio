@@ -216,7 +216,7 @@ function map() {
     if ($('#' + mapId).length > 0) {
 
         var icon = L.icon({
-            iconUrl: 'img/marker_blue3.png',
+            iconUrl: 'img/marker_blue.png',
             iconSize: [25, 37.5],
             popupAnchor: [0, -18],
             tooltipAnchor: [0, 19]
