@@ -1,1 +1,1 @@
-Portfolio personale con i migliori progetti sviullapti durante il corso di Boolean Careers.
+Portfolio personale con i migliori progetti sviluppati durante il corso di Boolean Careers.
