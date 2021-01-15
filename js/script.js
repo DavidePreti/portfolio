@@ -113,10 +113,12 @@ $(function () {
         $('#detail-title').text(title);
         $('#detail-content').html(description);
 
-        var images = $(this).siblings('.reference-description').data('images').split(',');
+        var images = $(this).siblings('.reference-description').data('images').split(',,');
+        console.log(images);
         if (images.length > 0) {
             sliderContent = '';
             for (var i = 0; i < images.length; ++i) {
+                console.log(images[i]);
                 sliderContent = sliderContent + '<div class="item"><img src=' + images[i] + ' alt="" class="img-fluid"></div>';
             }
         } else {
